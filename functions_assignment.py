@@ -35,7 +35,7 @@ def get_average(l: list):
 
 def get_median(l: list):
     l1 = sorted(l)
-    if is_even(len(l)):
+    if not is_even(len(l)):
         return l1[len(l)//2]
     else:
         x = l1[math.floor(len(l)/2)] + l1[math.ceil(len(l)/2)]
@@ -55,7 +55,8 @@ if __name__ == '__main__':
     print(factorial(5))
 
     list_of_numbers = [13, 56, 40, 27, 89, 45]
+    list_of_numbers2 = [1, 2, 3, 4, 5]
     print(get_average(list_of_numbers))
-    print(get_median(list_of_numbers))
+    print(get_median(list_of_numbers2))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
