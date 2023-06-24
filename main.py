@@ -54,4 +54,8 @@ if __name__ == '__main__':
     print(calculate_volume(4, 3, 2))
     print(factorial(5))
 
+    list_of_numbers = [13, 56, 40, 27, 89, 45]
+    print(get_average(list_of_numbers))
+    print(get_median(list_of_numbers))
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
